@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="Churn Prediction API — projeto acadêmico de Machine Learning, FastAPI e Streamlit para apoiar decisões de retenção de clientes.">
+  <title>Churn Prediction API — Antes do churn, uma chance de agir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="#topo" aria-label="Churn Prediction API — início">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13h4l3-8 4 14 3-8h4"/></svg></span>
+      <span>Churn Prediction API</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="#projeto">O projeto</a><a href="#dashboard">Dashboard</a><a href="#resultados">Resultados</a><a href="#api">Para devs</a>
+      <a class="nav-github" href="https://github.com/JorgeRodrigues2026/churn-api" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-wrap" id="topo">
+      <p class="eyebrow">MACHINE LEARNING APLICADO À RETENÇÃO <span>/</span> PROJETO ACADÊMICO</p>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Antes do churn,<br>uma chance <span>de agir.</span></h1>
+          <p class="hero-lead">Identifique quem pode cancelar. Priorize contatos e ofertas de retenção com uma API preditiva e o dashboard Churn Insights — dos dados à decisão.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/JorgeRodrigues2026/churn-api" target="_blank" rel="noreferrer">Explorar no GitHub <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#dashboard">Conhecer o dashboard <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <aside class="hero-proof" aria-label="Principal métrica do conjunto de teste">
+          <span class="mono-label">NO CONJUNTO DE TESTE</span>
+          <strong>81<span>%</span></strong>
+          <h2>dos cancelamentos identificados</h2>
+          <p>Recall de 80,8%, arredondado.<br>Não é acurácia nem garantia de resultado comercial.</p>
+        </aside>
+      </div>
+      <div class="hero-signature"><span>PYTHON <b>→</b> FASTAPI <b>→</b> SCIKIT-LEARN <b>→</b> STREAMLIT</span><span>Desenvolvimento Análise Preditiva · SCTEC</span></div>
+    </section>
+
+    <section class="dark-section" id="projeto">
+      <div class="section-wrap section-pad">
+        <p class="eyebrow eyebrow-light">01 / O PROBLEMA NÃO É SÓ PREVER. É SABER POR ONDE COMEÇAR.</p>
+        <h2 class="section-title title-light">Uma fila de atenção,<br>não uma bola de cristal.</h2>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-num">01 / ENTENDER</span><h3>Transforme dados em sinais.</h3><p>Informações de contrato, serviços e perfil do cliente entram em um pipeline único de pré-processamento e predição.</p></article>
+          <article class="step-card"><span class="step-num">02 / PRIORIZAR</span><h3>Encontre quem merece atenção.</h3><p>A API devolve probabilidade de churn e nível de risco para apoiar a priorização da carteira.</p></article>
+          <article class="step-card"><span class="step-num">03 / AGIR</span><h3>Prepare a próxima conversa.</h3><p>Explore cenários e sugestões de retenção no dashboard antes de definir contatos e ofertas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad product-section" id="dashboard">
+      <p class="eyebrow">02 / CHURN INSIGHTS · UM CLIENTE, UMA ANÁLISE</p>
+      <div class="section-heading-row"><h2 class="section-title">Do perfil do cliente<br>ao próximo passo.</h2><p>Preencha o perfil, visualize o risco e consulte sugestões de retenção. Request, response e cURL ficam disponíveis para conectar análise e implementação.</p></div>
+      <div class="feature-tags"><span>↗ Formulário validado</span><span>↗ Probabilidade e nível de risco</span><span>↗ Ações de retenção sugeridas</span></div>
+      <div class="product-window">
+        <div class="window-bar"><div class="window-title"><span class="tiny-icon">▦</span> CHURN INSIGHTS / PRÉVIA INTERATIVA</div><span class="status-pill"><i></i> DEMONSTRAÇÃO VISUAL</span></div>
+        <div class="mock-dashboard">
+          <aside class="mock-sidebar"><div class="mock-logo"><span class="brand-mark small-mark"><svg viewBox="0 0 24 24"><path d="M3 13h4l3-8 4 14 3-8h4"/></svg></span><b>Churn Insights</b></div><div class="mock-menu active">▦ <span>Visão geral</span></div><div class="mock-menu">◉ <span>Predição individual</span></div><div class="mock-menu">⇧ <span>Análise em lote</span></div><div class="mock-menu">⌘ <span>Laboratório API</span></div><div class="mock-side-note">MODELO CARREGADO<br><b>Logistic Regression</b></div></aside>
+          <div class="mock-content">
+            <div class="mock-topline"><div><span class="mock-overline">ANÁLISE INDIVIDUAL</span><h3>Resumo de risco do cliente</h3></div><span class="demo-badge">Dados demonstrativos</span></div>
+            <div class="mock-kpis"><div class="mock-kpi"><span>Probabilidade de churn</span><strong class="purple-number">88,6%</strong><small>Exemplo ilustrativo</small></div><div class="mock-kpi"><span>Nível de risco</span><strong class="risk-text">Alto</strong><small>Requer avaliação</small></div><div class="mock-kpi"><span>Próxima ação</span><strong class="kpi-action">Contato</strong><small>Revisar oferta de retenção</small></div></div>
+            <div class="mock-lower"><div class="mock-panel"><div class="panel-heading"><b>Fatores do perfil</b><span>ENTRADA</span></div><div class="profile-row"><span>Tipo de contrato</span><b>Mês a mês</b></div><div class="profile-row"><span>Tempo de casa</span><b>8 meses</b></div><div class="profile-row"><span>Pagamento</span><b>Débito automático</b></div><div class="profile-row"><span>Mensalidade</span><b>R$ 89,90</b></div></div><div class="mock-panel action-panel"><div class="panel-heading"><b>Próximos passos sugeridos</b><span>IDEIAS</span></div><div class="suggestion"><span>01</span><p><b>Revisar o contrato</b><small>Avaliar alternativa de maior permanência.</small></p></div><div class="suggestion"><span>02</span><p><b>Personalizar a oferta</b><small>Comparar benefício e custo de retenção.</small></p></div><div class="suggestion"><span>03</span><p><b>Registrar o contato</b><small>Acompanhar o resultado da abordagem.</small></p></div></div></div>
+            <p class="mock-disclaimer">Prévia de interface criada para esta página. Não está conectada à API e não representa uma predição real.</p>
+          </div>
+        </div>
+      </div>
+      <p class="figure-caption">FIG. 01 — Exemplo visual de predição individual. O valor de 88,6% é demonstrativo e não é uma métrica do conjunto de teste.</p>
+    </section>
+
+    <section class="lavender-section">
+      <div class="section-wrap section-pad">
+        <p class="eyebrow">03 / DA ANÁLISE INDIVIDUAL À CARTEIRA</p>
+        <div class="section-heading-row"><h2 class="section-title">Veja a carteira inteira.<br>Decida a ordem de contato.</h2><p>Envie um CSV e transforme previsões em uma visão de prioridade: distribuição de risco, gráficos por segmento, ranking de clientes e download dos resultados.</p></div>
+        <div class="process-line"><span>UPLOAD CSV</span><b>→</b><span>LOTES DE ATÉ 100</span><b>→</b><span>RANKING + EXPORTAÇÃO</span></div>
+        <div class="batch-preview">
+          <div class="batch-header"><div><span class="mono-label">CHURN INSIGHTS / ANÁLISE EM LOTE</span><h3>Prioridade da carteira</h3></div><span class="demo-badge">DADOS DE EXEMPLO</span></div>
+          <div class="batch-stats"><div><span>Clientes analisados</span><b>300</b><small>Simulação visual</small></div><div><span>Risco alto</span><b class="risk-text">74</b><small>Priorizar revisão</small></div><div><span>Arquivo</span><b class="file-name">clientes.csv</b><small>CSV demonstrativo</small></div></div>
+          <div class="batch-visuals"><div class="risk-distribution"><b>Distribuição de risco</b><div class="stacked-bar"><span></span><span></span><span></span></div><div class="legend"><span><i class="dot-high"></i> Alto</span><span><i class="dot-medium"></i> Médio</span><span><i class="dot-low"></i> Baixo</span></div></div><div class="rank-list"><b>Ranking ilustrativo</b><div class="rank-item"><span>Cliente #024</span><span class="rank-track"><i style="width:89%"></i></span><b>89%</b></div><div class="rank-item"><span>Cliente #108</span><span class="rank-track"><i style="width:82%"></i></span><b>82%</b></div><div class="rank-item"><span>Cliente #076</span><span class="rank-track"><i style="width:76%"></i></span><b>76%</b></div></div></div>
+          <div class="batch-footer"><span>✓ Exportação dos resultados em CSV</span><span>Processamento em lotes de até 100 clientes por requisição</span></div>
+        </div>
+        <p class="figure-caption">FIG. 02 — Ilustração de análise em lote. As quantidades e probabilidades mostradas acima não representam o desempenho do modelo.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad" id="recursos">
+      <p class="eyebrow">04 / CINCO PÁGINAS. UM FLUXO CONECTADO.</p>
+      <h2 class="section-title">Mais contexto para<br>cada previsão.</h2>
+      <div class="capability-grid">
+        <article class="capability-card"><span class="cap-icon">▦</span><span class="cap-label">CONTEXTO</span><h3>Visão geral</h3><p>Status da API, KPIs, matriz de confusão e comparação entre modelos em um só lugar.</p><div class="mini-chart"><div class="mini-bars"><i style="height:42%"></i><i style="height:66%"></i><i style="height:52%"></i><i style="height:83%"></i><i style="height:72%"></i><i style="height:93%"></i></div><div class="mini-chart-labels"><span>JAN</span><span>FEV</span><span>MAR</span><span>ABR</span><span>MAI</span><span>JUN</span></div></div></article>
+        <article class="capability-card"><span class="cap-icon">⌁</span><span class="cap-label">CENÁRIOS</span><h3>Simulador what-if</h3><p>Explore mudanças em tempo de casa, contrato, pagamento e mensalidade para comparar o risco previsto.</p><div class="slider-demo"><span>Tempo de casa <b>8 meses</b></span><div class="fake-slider"><i></i></div><span>Mensalidade <b>R$ 89,90</b></span><div class="fake-slider purple"><i></i></div></div></article>
+        <article class="capability-card"><span class="cap-icon">&lt;/&gt;</span><span class="cap-label">INTEGRAÇÃO</span><h3>Laboratório API</h3><p>Inspecione 9 cenários de requisição com respostas 200, 400 e 422, sem sair do dashboard.</p><div class="code-mini"><span><b>POST</b> /v1/predict</span><span class="code-ok">200 OK</span><code>{ "churn_probability": 0.8865 }</code></div></article>
+      </div>
+    </section>
+
+    <section class="results-section" id="resultados">
+      <div class="section-wrap section-pad">
+        <p class="eyebrow eyebrow-light">05 / EVIDÊNCIA, NÃO PROMESSA</p>
+        <div class="section-heading-row results-heading"><h2 class="section-title title-light">Encontrar mais sinais.<br>Assumir os trade-offs.</h2><p>O foco em recall é intencional: identificar mais clientes que cancelariam, aceitando falsos positivos. O resultado apoia decisões de retenção; não garante impacto comercial.</p></div>
+        <div class="metrics-layout"><div class="metrics-main"><span class="mono-label">REGRESSÃO LOGÍSTICA / CONJUNTO DE TESTE / LIMIAR 0,5</span><div class="recall-metric"><strong>80,8<span>%</span></strong><span>Recall</span></div><div class="metrics-grid"><div><b>0,832</b><span>ROC-AUC</span></div><div><b>74,3%</b><span>Acurácia</span></div><div><b>51,0%</b><span>Precisão</span></div><div><b>0,625</b><span>F1-score</span></div></div></div>
+          <div class="model-notes"><h3>Um modelo simples.<br>Um processo rigoroso.</h3><p>IBM Telco Customer Churn: 7.043 clientes, 19 features e cerca de 26,5% de churn. Divisão estratificada em 60% treino, 20% validação e 20% teste.</p><p>Imputação mediana/moda, OneHotEncoder com categorias desconhecidas ignoradas e StandardScaler dentro do pipeline. Regressão Logística com <code>class_weight="balanced"</code>: rápida, interpretável e com artefato de ~9 KB.</p><div class="validation-note"><span>VALIDAÇÃO · ROC-AUC</span><b>LR 0,859 <i>/</i> Random Forest 0,859</b></div><a class="source-link" href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn" target="_blank" rel="noreferrer">Fonte: IBM Telco Customer Churn · Kaggle ↗</a></div></div>
+        <div class="confusion-wrap"><div class="confusion-heading"><div><span class="mono-label">MATRIZ DE CONFUSÃO · TESTE</span><h3>Onde o modelo acerta — e onde erra.</h3></div><p>Linhas: real · Colunas: previsto<br>Ordem: não churn / churn</p></div><div class="confusion-matrix"><div class="matrix-empty"></div><div class="matrix-axis">Previsto: não churn</div><div class="matrix-axis">Previsto: churn</div><div class="matrix-axis matrix-row">Real: não churn</div><div class="matrix-cell true-negative"><b>745</b><span>Verdadeiros negativos</span></div><div class="matrix-cell false-positive"><b>290</b><span>Falsos positivos</span></div><div class="matrix-axis matrix-row">Real: churn</div><div class="matrix-cell false-negative"><b>72</b><span>Falsos negativos</span></div><div class="matrix-cell true-positive"><b>302</b><span>Verdadeiros positivos</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad api-section" id="api">
+      <p class="eyebrow">06 / POR DENTRO DA API</p>
+      <div class="section-heading-row"><h2 class="section-title">Uma interface clara.<br>Um pipeline consistente.</h2><p>O dashboard consome a API apenas por HTTP/REST. Não importa o modelo: apresentação, validação e inferência têm responsabilidades separadas.</p></div>
+      <div class="architecture"><div class="arch-node"><span class="arch-icon">▦</span><b>Churn Insights</b><span>Streamlit + Plotly</span></div><div class="arch-connector"><span>HTTP / REST</span><b>↔</b><span>JSON</span></div><div class="arch-node"><span class="arch-icon">⌘</span><b>FastAPI + Pydantic</b><span>Validação e regras</span></div><div class="arch-connector"><b>→</b></div><div class="arch-node"><span class="arch-icon">◈</span><b>scikit-learn</b><span>Pipeline em memória</span></div></div>
+      <div class="endpoint-grid"><article><span>GET</span><code>/health</code><p>Saúde e disponibilidade da API</p></article><article><span>POST</span><code>/v1/predict</code><p>Predição de um cliente</p></article><article><span>POST</span><code>/v1/predict/batch</code><p>De 1 a 100 clientes por requisição</p></article><article><span>GET</span><code>/v1/model/info</code><p>Metadados do modelo carregado</p></article></div>
+      <div class="api-example"><div class="api-example-head"><div><span class="mono-label">EXEMPLO DE RESPOSTA</span><h3>POST /v1/predict</h3></div><span class="http-status">200 OK</span></div><pre><code id="response-code">{
+  "success": true,
+  "churn_probability": 0.8865,
+  "risk_level": "high"
+}</code></pre><button class="copy-button" id="copy-response" type="button">Copiar exemplo <span aria-hidden="true">⧉</span></button><p class="code-note">Exemplo demonstrativo de resposta, não uma métrica do conjunto de teste.</p></div>
+      <div class="api-benefits"><article><span>01</span><div><h3>Carregado uma vez</h3><p>Lifespan, <code>app.state</code> e <code>Depends</code> mantêm o pipeline em memória, sem leitura de disco por requisição.</p></div></article><article><span>02</span><div><h3>Falhas explícitas</h3><p>Sem o artefato, a API sobe em modo degraded. Validação e erros tratados: 200, 400, 422, 500 e 503.</p></div></article><article><span>03</span><div><h3>13 testes automatizados</h3><p>pytest e httpx verificam os contratos da API. Código e documentação disponíveis no repositório.</p></div></article></div>
+    </section>
+
+    <section class="developer-section">
+      <div class="section-wrap section-pad">
+        <p class="eyebrow">07 / DO REPOSITÓRIO AO SEU AMBIENTE</p>
+        <div class="section-heading-row"><h2 class="section-title">Explore o código.<br>Rode localmente.</h2><p>Python 3.11+ e dois terminais: um para a API, outro para o dashboard. Os comandos abaixo seguem o ambiente Linux/macOS.</p></div>
+        <div class="run-grid"><article class="terminal-card"><div class="terminal-head"><span><i></i><i></i><i></i></span><b>01 / TERMINAL — API</b><button class="copy-command" data-copy="cd churn-api\npython -m venv .venv\nsource .venv/bin/activate\npip install -r requirements.txt\nuvicorn app.main:app --reload" type="button" aria-label="Copiar comandos da API">Copiar</button></div><pre><code>cd churn-api
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload</code></pre><a href="http://localhost:8000/docs" class="terminal-link" target="_blank" rel="noreferrer">API / localhost:8000/docs ↗</a></article><article class="terminal-card"><div class="terminal-head"><span><i></i><i></i><i></i></span><b>02 / OUTRO TERMINAL — DASHBOARD</b><button class="copy-command" data-copy="cd churn-api\nsource .venv/bin/activate\nstreamlit run dashboard/app.py" type="button" aria-label="Copiar comandos do dashboard">Copiar</button></div><pre><code>cd churn-api
+source .venv/bin/activate
+streamlit run dashboard/app.py</code></pre><a href="#dashboard" class="terminal-link">DASHBOARD / localhost:8501 ↗</a></article></div>
+        <div class="tech-stack"><span>Python 3.11+</span><span>FastAPI</span><span>scikit-learn</span><span>Pydantic</span><span>Streamlit</span><span>Plotly</span><span>pytest / httpx</span></div>
+        <p class="hosting-note"><b>Importante:</b> esta página institucional é estática, para GitHub Pages. A API FastAPI e o dashboard Streamlit são executados separadamente; não há demonstração hospedada aqui.</p>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="section-wrap section-pad final-cta-inner"><p class="eyebrow eyebrow-light">08 / ABERTO PARA QUEM QUER IR ALÉM</p><h2>Da hipótese ao endpoint.<br><span>Tudo no repositório.</span></h2><p>Conheça as decisões, explore os testes e execute o Churn Insights. Um projeto técnico/acadêmico que conecta análise preditiva e desenvolvimento de APIs.</p><a class="button button-light" href="https://github.com/JorgeRodrigues2026/churn-api" target="_blank" rel="noreferrer">Explorar no GitHub <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-main"><div><a class="brand footer-brand" href="#topo"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13h4l3-8 4 14 3-8h4"/></svg></span><span>Churn Prediction API</span></a><p>Machine learning para apoiar decisões de retenção.</p></div><div><span class="footer-label">AUTORIA</span><b>Jorge Luiz Susin Rodrigues</b><a href="https://github.com/JorgeRodrigues2026" target="_blank" rel="noreferrer">github.com/JorgeRodrigues2026 ↗</a></div><div><span class="footer-label">CONTEXTO ACADÊMICO</span><b>Projeto Avaliativo · Módulo 2 · Semana 13</b><span>Desenvolvimento Análise Preditiva · SCTEC</span></div></div><div class="section-wrap footer-bottom"><span>PROJETO ACADÊMICO / NÃO É UM SERVIÇO COMERCIAL</span><span>Dados: IBM Telco Customer Churn · Kaggle</span></div></footer>
+</body>
+</html>
