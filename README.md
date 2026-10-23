@@ -189,6 +189,7 @@ Saída (200):
 ## 6. Links das evidências
 
 - 🎥 Vídeo de apresentação: **[COLOCAR AQUI O LINK DO GOOGLE DRIVE]**
+- 📉 Apresentação Git.io: https://jorgerodrigues2026.github.io/churn-api
 - 💻 Repositório: https://github.com/JorgeRodrigues2026/churn-api
 
 ## Melhorias futuras
